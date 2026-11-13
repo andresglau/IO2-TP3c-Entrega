@@ -1,0 +1,59 @@
+======================================================================
+ALCANCE_NOC (impresiones nocivas totales, promedio por combinacion)
+======================================================================
+
+--- Efectos principales (ALCANCE_NOC) ---
+Palanca                       coef (unidad real)   efecto bajo->alto     p-valor
+VD1 - moderadores                  -303,407.6833          -3,034,077     0.1716 
+VD1 - clasificador               -1,829,711.2134            -494,022     0.5978 
+VD2 - friccion                  -10,575,927.4531          -9,518,335     0.0001*
+VD3 - degradacion                -5,988,739.3435          -5,389,865     0.0135*
+
+--- Interacciones de a pares (ALCANCE_NOC) ---
+Par de palancas                                            coef     p-valor
+VD1 - moderadores x VD1 - clasificador          -439,679.202872     0.1018 
+VD1 - moderadores x VD2 - friccion               401,409.999779     0.0000*
+VD1 - moderadores x VD3 - degradacion            207,862.588276     0.0111*
+VD1 - clasificador x VD2 - friccion            3,182,408.793386     0.2891 
+VD1 - clasificador x VD3 - degradacion         1,481,696.515168     0.6048 
+VD2 - friccion x VD3 - degradacion             3,160,799.698300     0.0007*
+
+R^2 (WLS) = 0.7656
+
+======================================================================
+COSTO (USD totales, promedio por combinacion)
+======================================================================
+
+--- Efectos principales (COSTO) ---
+Palanca                       coef (unidad real)   efecto bajo->alto     p-valor
+VD1 - moderadores                    15,653.7674             156,538     0.0000*
+VD1 - clasificador                  134,420.2500              36,293     0.0000*
+VD2 - friccion                       -4,235.8749              -3,812     0.0849 
+VD3 - degradacion                     8,612.3735               7,751     0.1862 
+
+--- Interacciones de a pares (COSTO) ---
+Par de palancas                                            coef     p-valor
+VD1 - moderadores x VD1 - clasificador               150.968091     0.5543 
+VD1 - moderadores x VD2 - friccion                    55.943022     0.4844 
+VD1 - moderadores x VD3 - degradacion               -101.906412     0.6403 
+VD1 - clasificador x VD2 - friccion                4,337.142958     0.1344 
+VD1 - clasificador x VD3 - degradacion               629.474155     0.9355 
+VD2 - friccion x VD3 - degradacion                -4,499.219858     0.0826 
+
+R^2 (WLS) = 0.9998
+
+======================================================================
+FRONTERA DE PARETO (costo-beneficio): 11 de 81 combinaciones no dominadas
+======================================================================
+              nombre nivel_moderadores nivel_clasificador nivel_vd2 nivel_vd3  alcance_noc_media   costo_media
+pv_m0_c0_vd2_2_vd3_0              bajo               bajo      alto      bajo       6.538821e+06  33046.269913
+pv_m0_c0_vd2_2_vd3_1              bajo               bajo      alto     medio       6.223297e+06  33942.227190
+pv_m0_c0_vd2_2_vd3_2              bajo               bajo      alto      alto       5.337204e+06  44918.142126
+pv_m1_c0_vd2_2_vd3_0             medio               bajo      alto      bajo       4.944763e+06  96304.155716
+pv_m1_c0_vd2_2_vd3_2             medio               bajo      alto      alto       4.854870e+06 107918.964529
+pv_m1_c1_vd2_2_vd3_1             medio              medio      alto     medio       4.694919e+06 117646.266245
+pv_m1_c1_vd2_2_vd3_2             medio              medio      alto      alto       4.277330e+06 128221.238851
+pv_m1_c2_vd2_2_vd3_2             medio               alto      alto      alto       4.196396e+06 145464.820369
+pv_m2_c1_vd2_2_vd3_2              alto              medio      alto      alto       4.078246e+06 223481.337943
+pv_m2_c2_vd2_2_vd3_0              alto               alto      alto      bajo       3.886619e+06 228949.751811
+pv_m2_c2_vd2_2_vd3_2              alto               alto      alto      alto       3.727468e+06 240466.363104
